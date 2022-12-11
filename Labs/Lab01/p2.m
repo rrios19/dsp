@@ -1,13 +1,14 @@
 % Tecnologico de Costa Rica
-% Digital signal processing
+% EL5805 Digital Signal Processing
+% Author: Ronald Rios Pineda
 % Octave 7.2.0 on macOS Ventura 13.0.1
-% Ronald Rios Pineda
 % Lab 01
+% Description: Plot discrete sequence data 
 
 fig = figure('name','Discrete-time signals');
 clf;
 
-n = 0:25;
+n = 0:1:25;
 x = zeros(5,length(n));
 
 x(1,:) = cos(2*pi*n/4);
