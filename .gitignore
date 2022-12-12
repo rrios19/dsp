@@ -1,0 +1,11 @@
+*.pdf
+*.zip
+base.m
+.DS_Store
+Examenes/
+Materiales/
+Formularios/
+Semanas\ Lectivas/
+Proyectos/
+Quices/
+Tareas/
