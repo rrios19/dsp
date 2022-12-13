@@ -18,9 +18,10 @@ function [n,y] = system2(n,x)
 end
 
 function my_plot(n,x,i,s)
-    t = ['2x_1(n)'; '0.5x_2(n)'; '2x_1(n) + 0.5x_2(n)';
-        'T[ 2x_1(n) + 0.5x_2(n) ]'; 'T[ x_1(n) ]';'T[ x_2(n) ]';
-        'T[ x_1(n) ] + T[ x_2(n) ]'; '2T[ x_1(n) ] + 0.5T[ x_2(n) ]'];
+    t = ['         2x_1(n)         '; '        0.5x_2(n)        '; 
+         '   2x_1(n) + 0.5x_2(n)   '; ' T[2x_1(n) + 0.5x_2(n)]  '; 
+         '        T[x_1(n)]        '; '        T[ x_2(n)]       ';
+         ' T[x_1(n)] + T[x_2(n)]   '; '2T[x_1(n)] + 0.5T[x_2(n)]'];
     subplot(2,4,i)
     stem(n,x)
     title(t(i,:))
@@ -61,9 +62,5 @@ fig2 = figure('name','Linear analysis with y(n)=x(n)-x(n-1)');
 clf;
 for i=1:8
     my_plot(n,y(i,:),i,5)   
-    %subplot(2,4,i)
-    %stem(n,y(i,:))
-    %title(t(i,:))
-    %xlim([0 5])   
 end
 
