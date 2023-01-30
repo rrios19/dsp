@@ -56,8 +56,7 @@ for i = 1:5
     grid minor
 end
 
-load("x.mat");
-Fs = 48000;
+load("x.mat"); % Load 'x' and 'Fs'
 
 % First filter
 y1 = 0;

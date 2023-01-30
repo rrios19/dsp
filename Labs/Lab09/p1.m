@@ -11,5 +11,5 @@
 ch = 1;
 x = x(:,ch);
 
-save("x.mat","x")
+save("x.mat","x","Fs")
 
